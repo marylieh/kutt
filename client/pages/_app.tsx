@@ -6,6 +6,7 @@ import decode from "jwt-decode";
 import cookie from "js-cookie";
 import Head from "next/head";
 import React from "react";
+import ReactGA from "react-ga4";
 
 import { initializeStore } from "../store";
 import { TokenPayload } from "../types";
@@ -15,6 +16,7 @@ const { publicRuntimeConfig } = getConfig();
 // TODO: types
 class MyApp extends App<any> {
   static async getInitialProps({ Component, ctx }: AppContext) {
+    ReactGA.initialize("G-E9SEGJDFHL");
     const store = initializeStore();
     ctx.store = store;
 

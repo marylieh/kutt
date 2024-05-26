@@ -90,14 +90,6 @@ class AppDocument extends Document<Props> {
             defer
           />
         </Head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E9SEGJDFHL"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments});}
-          gtag('js', new Date());
-
-          gtag('config', 'G-E9SEGJDFHL');
-        </script>
         <body
           style={{
             margin: 0,
